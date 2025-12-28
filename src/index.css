@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap');
+
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  :root {
+    --background: 48 100% 98%; /* Warm cream */
+    --foreground: 160 84% 10%; /* Deep green-black */
+
+    --card: 48 100% 98%;
+    --card-foreground: 160 84% 10%;
+
+    --popover: 48 100% 98%;
+    --popover-foreground: 160 84% 10%;
+
+    --primary: 160 84% 30%; /* Islamic Emerald Green */
+    --primary-foreground: 48 100% 98%;
+
+    --secondary: 45 93% 47%; /* Gold */
+    --secondary-foreground: 160 84% 10%;
+
+    --muted: 48 30% 90%;
+    --muted-foreground: 160 20% 40%;
+
+    --accent: 45 93% 47%;
+    --accent-foreground: 160 84% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 48 100% 98%;
+
+    --border: 160 20% 85%;
+    --input: 160 20% 85%;
+    --ring: 160 84% 30%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 160 84% 5%;
+    --foreground: 48 100% 98%;
+
+    --card: 160 84% 5%;
+    --card-foreground: 48 100% 98%;
+
+    --popover: 160 84% 5%;
+    --popover-foreground: 48 100% 98%;
+
+    --primary: 160 84% 45%;
+    --primary-foreground: 160 84% 5%;
+
+    --secondary: 45 93% 47%;
+    --secondary-foreground: 160 84% 5%;
+
+    --muted: 160 30% 15%;
+    --muted-foreground: 160 20% 70%;
+
+    --accent: 45 93% 47%;
+    --accent-foreground: 160 84% 5%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 48 100% 98%;
+
+    --border: 160 30% 20%;
+    --input: 160 30% 20%;
+    --ring: 160 84% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Noto Sans Bengali', sans-serif;
+  }
+}
+
+/* Islamic Geometric Pattern Background Utility */
+.islamic-pattern {
+  background-color: transparent;
+  background-image: radial-gradient(circle at 2px 2px, currentColor 1px, transparent 0);
+  background-size: 24px 24px;
+  opacity: 0.05;
+}
+
+.islamic-border {
+  border-image: linear-gradient(to right, transparent, var(--primary), transparent) 1;
+}
