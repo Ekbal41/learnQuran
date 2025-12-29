@@ -93,10 +93,9 @@ const Navbar = () => {
                   {link.name}
                 </a>
               ))}
-
               <Button variant="islamic" className="w-full" asChild>
                 <a
-                  href="https://forms.gle/placeholder"
+                  href="https://forms.gle/EeF9VNQJXLS974qB7"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setIsMobileMenuOpen(false)}
