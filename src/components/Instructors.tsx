@@ -5,25 +5,31 @@ import { Star } from "lucide-react"
 
 const instructors = [
   {
-    name: "হাফেজ মাওলানা আব্দুল্লাহ",
-    role: "প্রধান শিক্ষক",
-    specialty: "তাজবিদ ও হিফজ বিশেষজ্ঞ",
-    experience: "১০+ বছরের অভিজ্ঞতা",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Abdullah",
+    name: "আলী আহসান মুজাহিদ",
+    role: "পরিচালক",
+    image: "/mujahid.jpeg",
+    experience: "টেক্সটাইল ইন্জিনিয়ার",
+
   },
   {
-    name: "মাওলানা সাইদুর রহমান",
-    role: "সিনিয়র শিক্ষক",
-    specialty: "কুরআন তিলাওয়াত ও আরবি ভাষা",
-    experience: "৮+ বছরের অভিজ্ঞতা",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Saidur",
+    name: "আব্দুল্লাহ আল মুজাহিদ",
+    role: "সিনিয়র শিক্ষক",
+    image: "/al-mujahid.jpeg",
+    experience: "উম্মুল ক্বুরা বিশ্ববিদ্যালয়, সৌদী আরব",
+
   },
   {
-    name: "হাফেজা ফাতেমা খাতুন",
-    role: "মহিলা শাখা প্রধান",
-    specialty: "মহিলা ও শিশুদের কুরআন শিক্ষা",
-    experience: "৬+ বছরের অভিজ্ঞতা",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Fatema",
+    name: "সাজ্জাদুল ইসলাম",
+    role: "শিক্ষক",
+    image: "/islam.jpeg",
+    experience: "ইসলামিক ইউনিভার্সিটি, কুষ্টিয়া",
+
+  },
+  {
+    name: "জহির আকন্দ",
+    role: "মেন্টর",
+    image: "/akond.jpeg",
+    experience: "ডিরেক্টর, বন বিভাগ",
   },
 ]
 
@@ -39,8 +45,8 @@ const Instructors = () => {
             আমাদের শিক্ষকগণ অত্যন্ত দক্ষ এবং শিক্ষার্থীদের প্রতি যত্নশীল। তারা প্রতিটি শিক্ষার্থীকে তাদের মেধা অনুযায়ী শিক্ষা প্রদান করেন।
           </p>
         </div>
-        
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {instructors.map((instructor, index) => (
             <motion.div
               key={index}
@@ -62,13 +68,13 @@ const Instructors = () => {
                     {instructor.role}
                   </Badge>
                   <h3 className="mb-1 text-xl font-bold">{instructor.name}</h3>
-                  <p className="mb-4 text-sm text-primary font-medium">{instructor.specialty}</p>
                   <div className="flex items-center justify-center space-x-1 text-yellow-500">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="h-4 w-4 fill-current" />
                     ))}
                   </div>
                   <p className="mt-4 text-sm text-muted-foreground">{instructor.experience}</p>
+
                 </CardContent>
               </Card>
             </motion.div>

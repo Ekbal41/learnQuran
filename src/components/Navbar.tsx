@@ -9,6 +9,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "হোম", href: "#" },
+    { name: "আমাদের শিক্ষা পদ্ধতি", href: "#teaching-way" },
     { name: "শিক্ষকগণ", href: "#instructors" },
   ];
 
@@ -44,7 +45,7 @@ const Navbar = () => {
               <ModeToggle />
               <Button variant="islamic" size="sm" asChild>
                 <a
-                  href="https://forms.gle/placeholder"
+                  href="https://forms.gle/EeF9VNQJXLS974qB7"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

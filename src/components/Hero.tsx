@@ -48,7 +48,7 @@ const Hero = () => {
           >
             <Button size="lg" variant="islamic" className="px-10" asChild>
               <a
-                href="https://forms.gle/placeholder"
+                href="https://forms.gle/EeF9VNQJXLS974qB7"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -66,20 +66,8 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-4"
+            className="mt-16 grid grid-cols-2 gap-8"
           >
-            <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold text-primary">৫০০+</span>
-              <span className="text-sm text-muted-foreground">
-                সফল শিক্ষার্থী
-              </span>
-            </div>
-            <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold text-primary">২০+</span>
-              <span className="text-sm text-muted-foreground">
-                অভিজ্ঞ শিক্ষক
-              </span>
-            </div>
             <div className="flex flex-col items-center">
               <span className="text-3xl font-bold text-primary">১০০%</span>
               <span className="text-sm text-muted-foreground">
@@ -87,13 +75,12 @@ const Hero = () => {
               </span>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold text-primary">২৪/৭</span>
+              <span className="text-3xl font-bold text-primary">২৪/১২</span>
               <span className="text-sm text-muted-foreground">সাপোর্ট</span>
             </div>
           </motion.div>
         </div>
       </div>
-
       {/* Decorative Elements */}
       <div className="absolute -bottom-24 -left-24 h-64 w-64 rounded-full bg-primary/5 blur-3xl" />
       <div className="absolute -top-24 -right-24 h-64 w-64 rounded-full bg-secondary/5 blur-3xl" />

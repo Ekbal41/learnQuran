@@ -1,25 +1,25 @@
 import { motion } from "framer-motion"
-import { 
-  Users, 
-  GraduationCap, 
-  BookOpen 
+import {
+  Users,
+  GraduationCap,
+  BookOpen
 } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 const features = [
   {
     title: "অভিজ্ঞ শিক্ষক",
-    description: "আমাদের সকল শিক্ষক হাফেজ এবং অভিজ্ঞ আলেম যারা অত্যন্ত ধৈর্যের সাথে শিক্ষা প্রদান করেন।",
+    description: "আমাদের সকল শিক্ষক অভিজ্ঞ ও দ্বীনি শিক্ষায় শিক্ষিত যারা অত্যন্ত ধৈর্যের সাথে সাইন্টিফিক পদ্ধতিতে শিক্ষা প্রদান করেন।",
     icon: Users,
   },
   {
     title: "সব বয়সের জন্য",
-    description: "শিশু থেকে বৃদ্ধ, যে কেউ আমাদের এখানে কুরআন শিখতে পারেন। আমরা প্রত্যেকের জন্য আলাদা পদ্ধতি অনুসরণ করি।",
+    description: "শিশু থেকে বৃদ্ধ যে কেউ আমাদের এখানে কুরআন শিখতে পারেন। আমরা প্রত্যেকের সক্ষমতার ভিত্তিতে আলাদা পদ্ধতি অনুসরণ করি।",
     icon: GraduationCap,
   },
   {
     title: "সম্পূর্ণ ফ্রি",
-    description: "আমরা কোনো ফি গ্রহণ করি না। আমাদের লক্ষ্য হলো সবার কাছে আল্লাহর বাণী পৌঁছে দেওয়া।",
+    description: "আমরা কোনো ফী গ্রহণ করিনা। শুধুমাত্র আল্লাহর সন্তুষ্টির উদ্দেশ্যে কুরআনের আলো ছড়িয়ে দেওয়াই আমাদের মূল লক্ষ্য!",
     icon: BookOpen,
   },
 ]
@@ -36,7 +36,7 @@ const Features = () => {
             আমরা মানসম্মত কুরআন শিক্ষা নিশ্চিত করতে আধুনিক প্রযুক্তি এবং ঐতিহ্যবাহী পদ্ধতির সমন্বয় ঘটিয়েছি।
           </p>
         </div>
-        
+
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
             <motion.div

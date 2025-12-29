@@ -7,7 +7,7 @@ const CTA = () => {
     <section className="relative overflow-hidden py-20">
       <div className="absolute inset-0 bg-primary islamic-pattern opacity-10" />
       <div className="absolute inset-0 bg-primary/90" />
-      
+
       <div className="container relative z-10 mx-auto px-4 text-center max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -22,17 +22,16 @@ const CTA = () => {
             আমাদের সাথে যুক্ত হয়ে সহীহভাবে কুরআন তিলাওয়াত শিখুন। আমরা আপনাকে একটি সুন্দর এবং আধ্যাত্মিক পরিবেশ নিশ্চিত করব।
           </p>
           <Button size="lg" variant="secondary" className="px-10 text-lg font-bold" asChild>
-            <a href="https://forms.gle/placeholder" target="_blank" rel="noopener noreferrer">
+            <a href="https://forms.gle/EeF9VNQJXLS974qB7" target="_blank" rel="noopener noreferrer">
               এখনই যোগ দিন
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
           </Button>
           <p className="mt-6 text-sm text-primary-foreground/60">
-            কোনো প্রশ্ন আছে? আমাদের কল করুন: <span className="font-bold text-white">+৮৮০ ১২৩৪ ৫৬৭৮৯০</span>
+            কোনো প্রশ্ন আছে? আমাদের কল করুন: <span className="font-bold text-white">+8801784002305</span>
           </p>
         </motion.div>
       </div>
-      
       {/* Decorative Circles */}
       <div className="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
       <div className="absolute -right-20 -bottom-20 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
