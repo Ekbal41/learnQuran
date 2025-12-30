@@ -1,25 +1,26 @@
 import { motion } from "framer-motion";
 import { MessageSquare, GraduationCap, ArrowRight, Users } from "lucide-react";
+import { Card } from "./ui/card";
 
 const TeachingWay = () => {
   const ways = [
     {
-      icon: <MessageSquare className="h-8 w-8 text-primary" />,
+      icon: <MessageSquare className="h-6 w-6 text-primary" />,
       title: "হোয়াটসঅ্যাপ ক্লাস",
       description: "হোয়াটসঅ্যাপে গ্রুপ কলের মাধ্যমে সরাসরি ক্লাস নেওয়া হয়, যা অত্যন্ত সহজ এবং সাবলীল।",
     },
     {
-      icon: <Users className="h-8 w-8 text-primary" />,
+      icon: <Users className="h-6 w-6 text-primary" />,
       title: "গ্রুপ গ্রেডিং সিস্টেম",
       description: "শিক্ষার্থীদের দক্ষতার ভিত্তিতে আলাদা আলাদা গ্রুপে ভাগ করে নিবিড়ভাবে পাঠদান করা হয়।",
     },
     {
-      icon: <ArrowRight className="h-8 w-8 text-primary" />,
+      icon: <ArrowRight className="h-6 w-6 text-primary" />,
       title: "পর্যায়ক্রমিক উন্নতি",
       description: "কায়দা থেকে তাজবিদ, এরপর তালিম ও এডভান্স লেভেলে ধাপে ধাপে উন্নীত হওয়ার সুযোগ।",
     },
     {
-      icon: <GraduationCap className="h-8 w-8 text-primary" />,
+      icon: <GraduationCap className="h-6 w-6 text-primary" />,
       title: "শিক্ষক হিসেবে গড়ে তোলা",
       description: "আমাদের মূল লক্ষ্য শুধু শেখানো নয়, বরং আপনাকে একজন দক্ষ শিক্ষক হিসেবে গড়ে তোলা।",
     },
@@ -65,19 +66,19 @@ const TeachingWay = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -5 }}
-              className="bg-background/50 backdrop-blur-sm p-8 rounded-2xl border border-border hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-xl group"
             >
-              <div className="mb-6 p-3 bg-primary/10 rounded-xl w-fit group-hover:bg-primary/20 transition-colors">
-                {way.icon}
-              </div>
-              <h3 className="text-xl font-bold mb-4 text-foreground">{way.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {way.description}
-              </p>
+              <Card className="h-full p-6 border-none bg-background shadow-lg transition-all hover:shadow-xl hover:-translate-y-1">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  {way.icon}
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-foreground">{way.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {way.description}
+                </p>
+              </Card>
             </motion.div>
           ))}
         </div>
-
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}

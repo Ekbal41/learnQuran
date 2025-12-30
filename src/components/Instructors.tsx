@@ -13,14 +13,14 @@ const instructors = [
   },
   {
     name: "আব্দুল্লাহ আল মুজাহিদ",
-    role: "সিনিয়র শিক্ষক",
+    role: "প্রধান শিক্ষক",
     image: "/al-mujahid.jpeg",
     experience: "উম্মুল ক্বুরা বিশ্ববিদ্যালয়, সৌদী আরব",
 
   },
   {
     name: "সাজ্জাদুল ইসলাম",
-    role: "শিক্ষক",
+    role: "সিনিয়র শিক্ষক",
     image: "/islam.jpeg",
     experience: "ইসলামিক ইউনিভার্সিটি, কুষ্টিয়া",
 
