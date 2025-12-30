@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, BookOpen } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ModeToggle } from "./mode-toggle";
 
@@ -24,14 +24,20 @@ const Navbar = () => {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary text-primary-foreground">
-                <BookOpen className="h-4 w-4" />
+              <img
+                src="share.png"
+                className="h-8 w-8 rounded-sm object-cover"
+                alt="logo"
+              />
+              <div>
+                <p className="block text-lg font-bold tracking-tight text-foreground -mb-2">
+                  Free <span className="text-primary">Quran</span>
+                </p>
+                <p className="block text-xs font-semibold text-foreground">
+                  Learning Center
+                </p>
               </div>
-              <span className="text-xl font-bold tracking-tight text-foreground">
-                কুরআন <span className="text-primary">শিক্ষা</span>
-              </span>
             </div>
-
             <div className="hidden md:flex items-center space-x-4">
               {navLinks.map((link) => (
                 <a
